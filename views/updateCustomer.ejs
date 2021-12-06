@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Update Product</h4>
+    </div>
+    <div class="card-body">
+        <form action="/updateCustomer/<%= customer._id %>" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductCategory">Prodcut Category</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductCategory %>" name="ProductCategory" placeholder="enter Product Category" id="ProductCategory">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductName">Product Name</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductName %>" name="ProductName" placeholder="enter Prodcut Name" id="ProductName">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductOne">Product One</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductOne %>" name="ProductOne" placeholder="enter Prodcut One" id="ProductOne">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductTwo">Product Two</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductTwo %>" name="ProductTwo" placeholder="enter Prodcut Two" id="ProductTwo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductThird">Product Third</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductThird %>" name="ProductThird" placeholder="enter Prodcut Third" id="ProductThird">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="ProductFourth">Product Fourth</label>
+                        <input type="text" class="form-control" value="<%= customer.ProductFourth %>" name="ProductFourth" placeholder="enter Prodcut Fourth" id="ProductFourth">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-success">Update</button>
+                <a href="/" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
